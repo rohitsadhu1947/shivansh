@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A843;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C5A55A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E8C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B1A4A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Circle -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#gold)" stroke-width="4" stroke-dasharray="500 100" />
+  <!-- Trident -->
+  <path d="M100 30 L100 85" stroke="url(#pink)" stroke-width="4" stroke-linecap="round" />
+  <path d="M85 45 L100 30 L115 45" stroke="url(#pink)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M90 42 L100 32 L110 42" stroke="#E91E8C" stroke-width="3" fill="none" stroke-linecap="round" />
+  <!-- Om-inspired curves -->
+  <path d="M60 100 Q60 70 85 70 Q100 70 100 85 Q100 100 85 100 Q70 100 70 115 Q70 130 90 130" stroke="url(#gold)" stroke-width="5" fill="none" stroke-linecap="round" />
+  <!-- Eye shape -->
+  <ellipse cx="130" cy="100" rx="25" ry="15" fill="none" stroke="#2A6FDB" stroke-width="3" />
+  <circle cx="130" cy="100" r="6" fill="#E91E8C" />
+  <circle cx="130" cy="100" r="3" fill="#27AE60" />
+  <!-- Snake curve -->
+  <path d="M95 90 Q110 80 120 90 Q130 100 140 90" stroke="#27AE60" stroke-width="4" fill="none" stroke-linecap="round" />
+  <!-- Text -->
+  <text x="100" y="175" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8B1A4A" font-weight="bold" letter-spacing="1">ShivAnsh Events</text>
+</svg>
