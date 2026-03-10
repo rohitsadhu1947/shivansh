@@ -1,3 +1,6 @@
 *.pdf
 .DS_Store
 .claude/
+images/WhatsApp*
+images/*.zip
+images/videos/*.mp4

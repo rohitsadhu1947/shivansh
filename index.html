@@ -6,7 +6,7 @@
 
     <title>ShivAnsh Events | Premier Event Management & Destination Weddings in India</title>
     <meta name="description" content="ShivAnsh Events - India's premier women-led event management company. Corporate events, destination weddings, luxury travel & adventure experiences. Crafting moments, creating magic.">
-    <meta name="keywords" content="event management India, destination weddings, corporate events, wedding planner, corporate travel, luxury events, ShivAnsh Events, women-led events, Delhi event management">
+    <meta name="keywords" content="event management India, destination weddings, corporate events, wedding planner, corporate travel, luxury events, ShivAnsh Events, women-led events, Delhi event management, group tours, adventure travel">
     <meta name="author" content="ShivAnsh Events">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://shivanshevents.com/">
@@ -31,18 +31,33 @@
         "url": "https://shivanshevents.com",
         "telephone": ["+919810009082", "+918800998169", "+918470011290"],
         "email": "shiv.anshevents1@gmail.com",
-        "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Chhatarpur Road Asola",
+            "addressLocality": "New Delhi",
+            "postalCode": "110074",
+            "addressCountry": "IN"
+        },
         "sameAs": ["https://www.instagram.com/shiva.nshevents"],
-        "areaServed": { "@type": "Country", "name": "India" },
+        "areaServed": [
+            { "@type": "Country", "name": "India" },
+            { "@type": "Country", "name": "Thailand" },
+            { "@type": "Country", "name": "Vietnam" },
+            { "@type": "Country", "name": "Turkey" },
+            { "@type": "Country", "name": "Sri Lanka" },
+            { "@type": "Country", "name": "South Korea" },
+            { "@type": "Country", "name": "Singapore" },
+            { "@type": "Country", "name": "Maldives" }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Event Services",
             "itemListElement": [
                 {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corporate Events"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Group Travels"}},
                 {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Destination Weddings"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding Planning"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corporate Travel"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Entertainment & Adventure"}}
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Adventure Tours"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Amusement & Entertainment"}}
             ]
         }
     }
@@ -56,12 +71,12 @@
             {
                 "@type": "Question",
                 "name": "What services does ShivAnsh Events offer?",
-                "acceptedAnswer": { "@type": "Answer", "text": "We offer corporate events, destination weddings, wedding planning, corporate travel, entertainment, adventure experiences, corporate trainings, and gifting." }
+                "acceptedAnswer": { "@type": "Answer", "text": "We offer corporate events, private group travels (domestic & international), destination weddings, wedding planning, adventure tours, cruises, and amusement & entertainment experiences." }
             },
             {
                 "@type": "Question",
-                "name": "Does ShivAnsh Events handle destination weddings?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes, we specialize in destination weddings across India and internationally, handling venue, decor, hospitality, and entertainment." }
+                "name": "Does ShivAnsh Events handle international tours?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes, we organize group tours to 50+ countries including Thailand, Vietnam, Turkey, Sri Lanka, South Korea, Singapore, Malaysia, Maldives, China, and many more." }
             },
             {
                 "@type": "Question",
@@ -77,7 +92,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="icon" type="image/jpeg" href="images/logo-actual.jpeg">
 </head>
 <body>
 
@@ -85,13 +100,14 @@
     <header id="header" class="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <img src="images/logo.svg" alt="ShivAnsh Events" width="48" height="48">
-                <span>ShivAnsh</span>
+                <img src="images/logo-actual.jpeg" alt="ShivAnsh Events" width="48" height="48">
+                <span>ShivAnsh Events</span>
             </a>
             <ul class="nav__menu" id="navMenu">
                 <li><a href="#about" class="nav__link">About</a></li>
                 <li><a href="#services" class="nav__link">Services</a></li>
-                <li><a href="#work" class="nav__link">Portfolio</a></li>
+                <li><a href="#tours" class="nav__link">Tours</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
             <a href="#contact" class="nav__cta">Inquire Now</a>
@@ -110,9 +126,9 @@
             <div class="hero__content container">
                 <p class="hero__tag hero-anim" style="animation-delay:.2s">ShivAnsh Events</p>
                 <h1 class="hero__title hero-anim" style="animation-delay:.4s">Crafting Moments,<br><em>Creating Magic</em></h1>
-                <p class="hero__sub hero-anim" style="animation-delay:.6s">Premier event experiences across India & beyond</p>
+                <p class="hero__sub hero-anim" style="animation-delay:.6s">Delivering world-class event experiences in India and globally.</p>
                 <div class="hero__actions hero-anim" style="animation-delay:.8s">
-                    <a href="#contact" class="btn btn--gold">Plan Your Event</a>
+                    <a href="#contact" class="btn btn--primary">Plan Your Event</a>
                     <a href="#services" class="btn btn--ghost">Our Services</a>
                 </div>
             </div>
@@ -125,8 +141,8 @@
         <section class="ribbon">
             <div class="container ribbon__inner">
                 <div class="ribbon__stat">
-                    <span class="ribbon__number" data-count="500">0</span>
-                    <span class="ribbon__label">Events Delivered</span>
+                    <span class="ribbon__number" data-count="50">0</span>
+                    <span class="ribbon__label">Countries Covered</span>
                 </div>
                 <div class="ribbon__stat">
                     <span class="ribbon__number" data-count="22">0</span>
@@ -175,76 +191,136 @@
             <div class="container">
                 <div class="section__header reveal-el">
                     <span class="section__tag">What We Do</span>
-                    <h2 class="section__title">Curated <em>Experiences</em></h2>
+                    <h2 class="section__title">Our <em>Services</em></h2>
                 </div>
             </div>
 
-            <div class="services__grid">
+            <div class="container services__grid">
+                <!-- 1. Corporate -->
                 <a href="#contact" class="service-card reveal-el">
                     <div class="service-card__img">
                         <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Corporate conference with professional staging" loading="lazy">
                     </div>
                     <div class="service-card__body">
                         <span class="service-card__number">01</span>
-                        <h3>Corporate Events</h3>
-                        <p>Conferences, product launches, award nights & team retreats that elevate your brand.</p>
+                        <h3>Corporate</h3>
+                        <ul class="service-card__list">
+                            <li>End-to-End Customized Corporate Events</li>
+                            <li>Corporate Travel & Tour Packages (Flights, Visa & Hotel Bookings)</li>
+                            <li>Corporate Wellness Programs</li>
+                        </ul>
                     </div>
                 </a>
 
+                <!-- 2. Private Group Travels -->
+                <a href="#tours" class="service-card reveal-el">
+                    <div class="service-card__img">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80" alt="International group travel destinations" loading="lazy">
+                    </div>
+                    <div class="service-card__body">
+                        <span class="service-card__number">02</span>
+                        <h3>Private Group Travels</h3>
+                        <ul class="service-card__list">
+                            <li>Domestic & International Group Tours</li>
+                            <li>Custom Itineraries for Private Groups</li>
+                            <li>All-Inclusive Packages with Flights, Hotels & Sightseeing</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- 3. Weddings -->
                 <a href="#contact" class="service-card reveal-el">
                     <div class="service-card__img">
                         <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=600&q=80" alt="Beautiful destination wedding ceremony" loading="lazy">
                     </div>
                     <div class="service-card__body">
-                        <span class="service-card__number">02</span>
-                        <h3>Destination Weddings</h3>
-                        <p>From royal palaces to exotic beaches, weddings as unique as your love story.</p>
-                    </div>
-                </a>
-
-                <a href="#contact" class="service-card reveal-el">
-                    <div class="service-card__img">
-                        <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&q=80" alt="Grand wedding reception with elegant decor" loading="lazy">
-                    </div>
-                    <div class="service-card__body">
                         <span class="service-card__number">03</span>
-                        <h3>Wedding Planning</h3>
-                        <p>End-to-end planning -- venues, themes, decor, catering & flawless execution.</p>
+                        <h3>Weddings</h3>
+                        <ul class="service-card__list">
+                            <li>Destination Weddings</li>
+                            <li>Wedding Planning</li>
+                            <li>Customized Private Events, Anniversaries, Ceremonies & Parties</li>
+                        </ul>
                     </div>
                 </a>
 
+                <!-- 4. Adventure -->
                 <a href="#contact" class="service-card reveal-el">
                     <div class="service-card__img">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Business travel and international destinations" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Cruise ship on the ocean" loading="lazy">
                     </div>
                     <div class="service-card__body">
                         <span class="service-card__number">04</span>
-                        <h3>Corporate Travel</h3>
-                        <p>Domestic & international travel -- retreats, incentive tours & seamless logistics.</p>
+                        <h3>Adventure</h3>
+                        <ul class="service-card__list">
+                            <li>Cruises (Domestic & International)</li>
+                            <li>Wildlife Tours & Heritage Tours</li>
+                            <li>Haunted Tours & Unique Experiences</li>
+                        </ul>
                     </div>
                 </a>
 
+                <!-- 5. Amusement & Entertainment -->
                 <a href="#contact" class="service-card reveal-el">
                     <div class="service-card__img">
-                        <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&q=80" alt="Adventure experience in the mountains" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&q=80" alt="Fun and entertainment experiences" loading="lazy">
                     </div>
                     <div class="service-card__body">
                         <span class="service-card__number">05</span>
-                        <h3>Adventure & Entertainment</h3>
-                        <p>Treks, cultural immersions, trampoline parks & high-energy corporate outings.</p>
+                        <h3>Amusement & Entertainment</h3>
+                        <ul class="service-card__list">
+                            <li>SkyJumper Trampoline Parks (22+ Centers)</li>
+                            <li>Channel Partner for Corporate & Group Bookings</li>
+                        </ul>
+                        <!-- TODO: Add SkyJumper logo and website link when available -->
                     </div>
                 </a>
+            </div>
+        </section>
 
-                <a href="#contact" class="service-card reveal-el">
-                    <div class="service-card__img">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Corporate training and wellness session" loading="lazy">
-                    </div>
-                    <div class="service-card__body">
-                        <span class="service-card__number">06</span>
-                        <h3>Corporate Wellness</h3>
-                        <p>Mindfulness, EQ training, yoga programs, stress management & team wellness.</p>
-                    </div>
-                </a>
+        <!-- Tour Packages Collage -->
+        <section id="tours" class="tours section">
+            <div class="container">
+                <div class="section__header reveal-el">
+                    <span class="section__tag">Explore the World</span>
+                    <h2 class="section__title">Upcoming <em>Tour Packages</em></h2>
+                    <p class="section__subtitle">Domestic & International Group Travel Experiences</p>
+                </div>
+            </div>
+            <div class="tours__collage reveal-el">
+                <div class="tours__item">
+                    <img src="images/tours/vietnam.jpeg" alt="Vietnam Tour Package - 8 Nights 9 Days" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/thailand.jpeg" alt="Thailand Tour Package - 5 Nights 6 Days" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/turkey.jpeg" alt="Turkey Tour Package - 9 Nights 10 Days" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/srilanka.jpeg" alt="Sri Lanka Tour Package - 6 Nights 7 Days" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/south-korea.jpeg" alt="South Korea Tour Package - 7 Nights 8 Days" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/singapore-malaysia-thailand.jpeg" alt="Singapore Malaysia Thailand Tour Package" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/china.jpeg" alt="China Tour Package - 9 Nights 10 Days" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/maldives-srilanka.jpeg" alt="Maldives & Sri Lanka Tour Package" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/kashmir.jpeg" alt="Kashmir Tour Package - 6 Nights 7 Days" loading="lazy">
+                </div>
+                <div class="tours__item">
+                    <img src="images/tours/char-dham.jpeg" alt="Char Dham Pilgrimage Tour - 9 Nights 10 Days" loading="lazy">
+                </div>
+            </div>
+            <div class="container tours__cta-wrap reveal-el">
+                <a href="#contact" class="btn btn--primary">Inquire About a Tour</a>
             </div>
         </section>
 
@@ -253,7 +329,7 @@
             <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1920&q=80" alt="Stunning outdoor event with dramatic lighting" loading="lazy">
             <div class="image-break__overlay">
                 <blockquote class="image-break__quote">
-                    <p>"Diversity isn't a theme, it's our foundation."</p>
+                    <p>"Crafting Moments, Creating Magic"</p>
                     <cite>-- ShivAnsh Events</cite>
                 </blockquote>
             </div>
@@ -299,34 +375,55 @@
             </div>
         </section>
 
-        <!-- Portfolio / Work -->
-        <section id="work" class="work section">
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio section">
             <div class="container">
                 <div class="section__header reveal-el">
                     <span class="section__tag">Our Work</span>
                     <h2 class="section__title">Moments We've <em>Crafted</em></h2>
                 </div>
             </div>
-            <div class="work__gallery reveal-el">
-                <div class="work__item work__item--wide">
+
+            <!-- Video Reels -->
+            <div class="container portfolio__videos reveal-el">
+                <div class="portfolio__video-item">
+                    <video controls preload="metadata" poster="">
+                        <source src="images/videos/reel-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="portfolio__video-item">
+                    <video controls preload="metadata" poster="">
+                        <source src="images/videos/reel-2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="portfolio__video-item">
+                    <video controls preload="metadata" poster="">
+                        <source src="images/videos/reel-3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="portfolio__gallery reveal-el">
+                <div class="portfolio__item portfolio__item--wide">
                     <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=900&q=80" alt="Elegant corporate gala dinner event" loading="lazy">
-                    <div class="work__overlay"><span>Corporate Gala</span></div>
+                    <div class="portfolio__overlay"><span>Corporate Gala</span></div>
                 </div>
-                <div class="work__item">
+                <div class="portfolio__item">
                     <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Romantic wedding ceremony setting" loading="lazy">
-                    <div class="work__overlay"><span>Wedding Ceremony</span></div>
+                    <div class="portfolio__overlay"><span>Wedding Ceremony</span></div>
                 </div>
-                <div class="work__item">
+                <div class="portfolio__item">
                     <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&q=80" alt="Festive celebration event" loading="lazy">
-                    <div class="work__overlay"><span>Celebrations</span></div>
+                    <div class="portfolio__overlay"><span>Celebrations</span></div>
                 </div>
-                <div class="work__item">
+                <div class="portfolio__item">
                     <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Outdoor adventure and team building" loading="lazy">
-                    <div class="work__overlay"><span>Adventure Trips</span></div>
+                    <div class="portfolio__overlay"><span>Adventure Trips</span></div>
                 </div>
-                <div class="work__item work__item--wide">
+                <div class="portfolio__item portfolio__item--wide">
                     <img src="https://images.unsplash.com/photo-1478146059778-26028b07395a?w=900&q=80" alt="Beautiful destination wedding" loading="lazy">
-                    <div class="work__overlay"><span>Destination Wedding</span></div>
+                    <div class="portfolio__overlay"><span>Destination Wedding</span></div>
                 </div>
             </div>
         </section>
@@ -336,7 +433,7 @@
             <div class="container">
                 <div class="section__header reveal-el">
                     <span class="section__tag">Client Love</span>
-                    <h2 class="section__title">Words That <em>Matter</em></h2>
+                    <h2 class="section__title">What People Say <em>About Us</em></h2>
                 </div>
                 <div class="testimonials__slider reveal-el" id="testimonialSlider">
                     <div class="testimonial active">
@@ -361,6 +458,39 @@
                         </div>
                     </div>
                     <div class="testimonials__dots" id="testimonialDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted Partners -->
+        <section class="partners section">
+            <div class="container">
+                <div class="section__header reveal-el">
+                    <span class="section__tag">Collaborations</span>
+                    <h2 class="section__title">Our Trusted <em>Partners</em></h2>
+                </div>
+                <div class="partners__grid reveal-el">
+                    <div class="partners__card">
+                        <div class="partners__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3>Kantaal Property</h3>
+                        <p>Premium venue partner for exclusive events and gatherings.</p>
+                    </div>
+                    <div class="partners__card">
+                        <div class="partners__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3>Sway Stay Property</h3>
+                        <p>Luxury stay partner for curated accommodation experiences.</p>
+                    </div>
+                    <div class="partners__card">
+                        <div class="partners__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3>Noida Farm House</h3>
+                        <p>Sprawling venue partner for outdoor celebrations and corporate retreats.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -407,11 +537,13 @@
                             <select id="eventType" name="eventType" class="form__input" required>
                                 <option value="" disabled selected>Event Type *</option>
                                 <option value="corporate-event">Corporate Event</option>
+                                <option value="corporate-travel">Corporate Travel</option>
+                                <option value="group-tour">Private Group Tour</option>
                                 <option value="destination-wedding">Destination Wedding</option>
                                 <option value="wedding-planning">Wedding Planning</option>
-                                <option value="corporate-travel">Corporate Travel</option>
-                                <option value="adventure">Adventure & Entertainment</option>
-                                <option value="corporate-training">Corporate Training</option>
+                                <option value="private-event">Private Event / Party</option>
+                                <option value="adventure">Adventure / Cruise</option>
+                                <option value="entertainment">Amusement & Entertainment</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -422,7 +554,7 @@
                     <div class="form__group">
                         <textarea id="message" name="message" class="form__input form__textarea" placeholder="Tell us about your vision *" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn--gold btn--full" id="submitBtn">
+                    <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
                         <span class="btn__text">Send Inquiry</span>
                     </button>
                     <p class="form__note">We'll respond within 24 hours</p>
@@ -432,7 +564,7 @@
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     <h3>Thank You</h3>
                     <p>We'll be in touch within 24 hours to discuss your event.</p>
-                    <button class="btn btn--ghost" onclick="resetForm()">Send Another Inquiry</button>
+                    <button class="btn btn--outline" onclick="resetForm()">Send Another Inquiry</button>
                 </div>
             </div>
         </section>
@@ -447,11 +579,11 @@
                 <div class="faq__list reveal-el">
                     <details class="faq__item">
                         <summary>What types of events do you manage?</summary>
-                        <p>Corporate conferences, product launches, award nights, team retreats, destination weddings, wedding planning, corporate travel, entertainment, adventure trips, and corporate wellness programs.</p>
+                        <p>Corporate conferences, product launches, award nights, team retreats, destination weddings, wedding planning, private group tours (domestic & international), cruises, adventure trips, and amusement experiences.</p>
                     </details>
                     <details class="faq__item">
-                        <summary>Do you handle international destination weddings?</summary>
-                        <p>Yes. From royal palaces in Rajasthan to beach venues internationally, we handle every detail including venue, decor, hospitality, and travel logistics.</p>
+                        <summary>Do you organize international group tours?</summary>
+                        <p>Yes! We organize curated group tours to 50+ countries including Thailand, Vietnam, Turkey, Sri Lanka, South Korea, Singapore, Malaysia, Maldives, China, Kashmir, and many more domestic destinations.</p>
                     </details>
                     <details class="faq__item">
                         <summary>Which cities do you operate in?</summary>
@@ -472,7 +604,7 @@
             <div class="footer__top">
                 <div class="footer__brand">
                     <a href="#" class="footer__logo">
-                        <img src="images/logo.svg" alt="ShivAnsh Events" width="40" height="40">
+                        <img src="images/logo-actual.jpeg" alt="ShivAnsh Events" width="40" height="40">
                         <span>ShivAnsh Events</span>
                     </a>
                     <p>Crafting Moments, Creating Magic</p>
@@ -480,7 +612,8 @@
                 <div class="footer__links">
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
-                    <a href="#work">Portfolio</a>
+                    <a href="#tours">Tours</a>
+                    <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer__social">
