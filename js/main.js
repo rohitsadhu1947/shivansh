@@ -75,39 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })(start);
     }
 
-    // ---------- Testimonials ----------
-    const slides = document.querySelectorAll('.testimonial');
-    const dotsContainer = document.getElementById('testimonialDots');
-    let current = 0;
-    let autoPlay;
-
-    if (slides.length && dotsContainer) {
-        slides.forEach((_, i) => {
-            const dot = document.createElement('div');
-            dot.classList.add('testimonials__dot');
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goTo(i));
-            dotsContainer.appendChild(dot);
-        });
-
-        function goTo(i) {
-            slides[current].classList.remove('active');
-            current = ((i % slides.length) + slides.length) % slides.length;
-            slides[current].classList.add('active');
-            dotsContainer.querySelectorAll('.testimonials__dot').forEach((d, idx) =>
-                d.classList.toggle('active', idx === current)
-            );
-        }
-
-        autoPlay = setInterval(() => goTo(current + 1), 5000);
-
-        const slider = document.getElementById('testimonialSlider');
-        slider.addEventListener('mouseenter', () => clearInterval(autoPlay));
-        slider.addEventListener('mouseleave', () => {
-            autoPlay = setInterval(() => goTo(current + 1), 5000);
-        });
-    }
-
     // ---------- Form (Formspree Integration) ----------
     const form = document.getElementById('inquiryForm');
     const success = document.getElementById('formSuccess');
