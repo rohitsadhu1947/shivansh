@@ -141,4 +141,50 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.querySelector('.btn__text').textContent = 'Send Inquiry';
         submitBtn.disabled = false;
     };
+
+    // ---------- Tour Lightbox ----------
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const tourItems = document.querySelectorAll('.tours__item img');
+    const tourImages = Array.from(tourItems).map(img => img.src);
+    let currentIndex = 0;
+
+    tourItems.forEach((img, i) => {
+        img.parentElement.addEventListener('click', () => {
+            currentIndex = i;
+            lightboxImg.src = tourImages[currentIndex];
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    lightbox.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    lightbox.querySelector('.lightbox__nav--prev').addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex - 1 + tourImages.length) % tourImages.length;
+        lightboxImg.src = tourImages[currentIndex];
+    });
+
+    lightbox.querySelector('.lightbox__nav--next').addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex + 1) % tourImages.length;
+        lightboxImg.src = tourImages[currentIndex];
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') lightbox.querySelector('.lightbox__nav--prev').click();
+        if (e.key === 'ArrowRight') lightbox.querySelector('.lightbox__nav--next').click();
+    });
 });

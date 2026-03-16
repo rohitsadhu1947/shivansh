@@ -165,8 +165,8 @@ ul { list-style: none; }
 }
 
 .nav__logo img {
-    width: 42px;
-    height: 42px;
+    width: 56px;
+    height: 56px;
     object-fit: contain;
     border-radius: 50%;
 }
@@ -325,11 +325,12 @@ ul { list-style: none; }
 }
 
 .hero__sub {
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgba(255,255,255,.75);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
     margin-bottom: 40px;
     letter-spacing: .5px;
+    text-shadow: 0 2px 12px rgba(0,0,0,.6), 0 1px 3px rgba(0,0,0,.4);
 }
 
 .hero__actions {
@@ -619,6 +620,87 @@ ul { list-style: none; }
     text-align: center;
     margin-top: 48px;
 }
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s var(--ease), visibility .3s;
+    cursor: zoom-out;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox__img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
+    transform: scale(.9);
+    transition: transform .3s var(--ease-out);
+}
+
+.lightbox.active .lightbox__img {
+    transform: scale(1);
+}
+
+.lightbox__close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,.15);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s;
+}
+
+.lightbox__close:hover {
+    background: rgba(255,255,255,.3);
+}
+
+.lightbox__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,.15);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s;
+}
+
+.lightbox__nav:hover {
+    background: rgba(255,255,255,.3);
+}
+
+.lightbox__nav--prev { left: 20px; }
+.lightbox__nav--next { right: 20px; }
 
 /* ---------- Image Break ---------- */
 .image-break {
